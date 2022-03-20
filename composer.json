@@ -1,0 +1,22 @@
+{
+    "name": "omar/test1",
+    "authors": [
+        {
+            "name": "Nasswallet",
+            "email": "example@test.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\": "test/"
+        }
+    }
+}
