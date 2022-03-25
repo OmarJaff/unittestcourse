@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '0088a4a9e0f6380d99ecafbc923e8ed7caa45210',
         'name' => 'omar/test1',
         'dev' => true,
     ),
@@ -38,12 +38,12 @@
             'dev_requirement' => false,
         ),
         'omar/test1' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '0088a4a9e0f6380d99ecafbc923e8ed7caa45210',
             'dev_requirement' => false,
         ),
         'phar-io/manifest' => array(

@@ -10,7 +10,13 @@ class Quiz
     protected array $questions;
 
     public function addQuestion(Question $question) {
-            $this->questions[] = $question;
+        $this->questions[] = $question;
+    }
+
+
+    public function totalNumberOfQuestions()
+    {
+        return count($this->questions);
     }
 
     public function nextQuestion() {
@@ -25,8 +31,7 @@ class Quiz
     public function grade() {
 
         $totalCorrectAnswers = Count($this->solvedQuestions());
-       
-
+        
         return ($totalCorrectAnswers / Count($this->questions)) * 100;
 
     }
@@ -34,6 +39,6 @@ class Quiz
     protected function solvedQuestions() {
        return array_filter($this->questions, fn($question) => $question->solved());
     }
-   
+     
 
 }

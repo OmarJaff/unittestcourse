@@ -52,7 +52,13 @@ class QuizTest extends TestCase
      /** @test */
      public function it_correctly_tracks_the_next_question_in_the_queue () 
      {
-         
+         $quiz = new Quiz();
+         $toatl = $quiz->totalNumberOfQuestions();
+         $quiz->nextQuestion();
+         $quiz->nextQuestion();
+         $quiz->nextQuestion();
+         $this->assertCount(3, $quiz)
+
      }
 
     /** @test */
